@@ -1,4 +1,3 @@
-Create a file named `README.md` in your GitHub repository and paste this:
 
 ```markdown
 # Campus Snack Bar POS
