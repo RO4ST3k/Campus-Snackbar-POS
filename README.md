@@ -1,6 +1,7 @@
 
 ```markdown
-# Campus Snack Bar POS
+Campus Snack Bar POS
+IT 415 Midterm Practical Examination
 
 A simple Point of Sale system built using pure HTML, CSS, and vanilla JavaScript for a practical exam.
 
