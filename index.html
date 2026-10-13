@@ -35,6 +35,25 @@
         <span>Total Amount</span>
         <strong id="total-amount">₱0.00</strong>
       </div>
+      <form id="payment-form" class="payment-form" novalidate>
+        <label for="cash-payment">Cash Payment</label>
+        <input id="cash-payment" name="cash-payment" type="number" min="0" step="0.01"
+          placeholder="Enter amount in pesos" aria-describedby="payment-error" required>
+        <p id="payment-error" class="error-message" role="alert" hidden></p>
+        <button id="confirm-payment" class="add-button" type="submit">Confirm Payment</button>
+      </form>
+      <p id="payment-success" class="success-message" role="status" hidden></p>
+      <section id="receipt" class="receipt" aria-labelledby="receipt-heading" hidden>
+        <h2 id="receipt-heading">Digital Receipt</h2>
+        <p class="receipt-reference">Reference: <strong id="receipt-reference"></strong></p>
+        <div id="receipt-items"></div>
+        <dl class="receipt-totals">
+          <div><dt>Total</dt><dd id="receipt-total"></dd></div>
+          <div><dt>Amount Paid</dt><dd id="receipt-paid"></dd></div>
+          <div><dt>Change</dt><dd id="receipt-change"></dd></div>
+        </dl>
+      </section>
+      <button id="new-transaction" class="new-transaction" type="button">Start New Transaction</button>
     </section>
   </main>
   <p id="status-message" class="sr-only" role="status"></p>

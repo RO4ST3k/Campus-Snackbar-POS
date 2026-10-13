@@ -6,6 +6,24 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+.payment-form { display: grid; gap: 12px; margin-top: 24px; }
+.payment-form label { font-weight: 700; }
+.payment-form input { width: 100%; padding: 12px; border: 1px solid #ccd9d0; border-radius: 7px; font: inherit; }
+.payment-form input:focus-visible { outline: 3px solid #d08c19; outline-offset: 2px; }
+.payment-form input[aria-invalid="true"] { border-color: #ad352d; }
+.error-message { color: #ad352d; margin: 0; line-height: 1.5; }
+.success-message { color: #174d38; background: #edf4ef; padding: 14px; border-radius: 7px; line-height: 1.5; }
+.receipt { border: 1px dashed #a7bbae; border-radius: 10px; padding: 18px; margin-top: 20px; }
+.receipt-reference { font-size: 13px; overflow-wrap: anywhere; color: #647269; }
+.receipt-item { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #e6ece8; font-size: 14px; }
+.receipt-item strong { white-space: nowrap; }
+.receipt-totals { margin: 16px 0 0; }
+.receipt-totals div { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; }
+.receipt-totals dd { margin: 0; font-weight: 700; }
+.new-transaction { width: 100%; padding: 12px; margin-top: 16px; border: 1px solid #216344; border-radius: 7px; background: white; color: #174d38; font-weight: 700; }
+.new-transaction:hover { background: #edf4ef; }
 body { margin: 0; }
 button { font: inherit; cursor: pointer; }
 button:focus-visible { outline: 3px solid #d08c19; outline-offset: 3px; }
