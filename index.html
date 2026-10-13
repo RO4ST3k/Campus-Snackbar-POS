@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Snack Bar POS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">CAMPUS SNACK BAR</p>
+      <h1>Point of Sale</h1>
+      <p>Select a snack and build your order.</p>
+    </div>
+  </header>
+
+  <main class="container pos-layout">
+    <section class="panel" aria-labelledby="products-heading">
+      <div class="panel-heading">
+        <h2 id="products-heading">Product List</h2>
+        <span class="badge">6 products</span>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section class="panel cart-panel" aria-labelledby="cart-heading">
+      <div class="panel-heading">
+        <h2 id="cart-heading">Shopping Cart / Order Summary</h2>
+      </div>
+      <p id="cart-count" class="cart-count">0 items in your order</p>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="total-row" aria-live="polite" aria-atomic="true">
+        <span>Total Amount</span>
+        <strong id="total-amount">₱0.00</strong>
+      </div>
+    </section>
+  </main>
+  <p id="status-message" class="sr-only" role="status"></p>
+</body>
+</html>
